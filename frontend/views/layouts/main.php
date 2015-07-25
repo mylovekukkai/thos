@@ -34,9 +34,9 @@ MaterialAsset::register($this);
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
-            $report_mnu_itms[] = ['label' => 'รายงานกายภาพบำบัด', 'url' => ['report/index']];
-            $report_mnu_itms[] = ['label' => 'ประชากร', 'url' => ['pop/index']];
-            $report_mnu_itms[] = ['label' => 'ANC', 'url' => ['anc/index']];
+            $report_mnu_itms[] = ['label' => 'รายงานกายภาพบำบัด', 'url' => ['physical/index']];
+            $report_mnu_itms[] = ['label' => 'รายงานแพทย์แผนไทย', 'url' => ['planthai/index']];
+            $report_mnu_itms[] = ['label' => 'รายงานทันตกรรม', 'url' => ['dentistry/index']];
             $menuItems = [
                 ['label' => 'หนัาหลัก', 'url' => ['/site/index']],
                 ['label' => 'รายงาน',

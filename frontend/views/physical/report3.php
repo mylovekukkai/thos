@@ -5,7 +5,7 @@ use yii\helpers\Html;
 use miloschuman\highcharts\Highcharts;
 
 $this->title = 'รายชื่อผู้มารับบริการทางกายภาพบำบัด IPD';
-$this->params['breadcrumbs'][] = ['label' => 'รายงานกายภาพบำบัด', 'url' => ['report/index']];
+$this->params['breadcrumbs'][] = ['label' => 'รายงานกายภาพบำบัด', 'url' => ['physical/index']];
 $this->params['breadcrumbs'][]=$this->title;
 ?>
 
@@ -58,41 +58,45 @@ echo GridView::widget([
     'columns' => [
         ['class' => 'yii\grid\SerialColumn'],
             [
-            'label'=>'วันที่รับบริการ',
-            'attribute'=>'vstdate'
-        ],
-        [
-            'label'=>'ชื่อ-สกุล',
-            'attribute'=>'ptname'
-        ],
-        [
-            'label'=>'CID',
-            'attribute'=>'cid'
-        ],
-        [
-            'label'=>'HN',
-            'attribute'=>'hn',
-        ],
-        [
-            'label'=>'อายุ',
-            'attribute'=>'age_y'
-        ],
-        [
-            'label'=>'PDX',
-            'attribute'=>'pdx',
-        ],
-        [
-            'label'=>'ICD9',
-            'attribute'=>'icd9'
-        ],
-        [
-            'label'=>'สิทธิ',
-            'attribute'=>'pttype'
-        ],
-        [
-            'label'=>'เจ้าหน้าที่',
-            'attribute'=>'name3'
-        ],
+                'label'=>'วันที่รับบริการ',
+                'attribute'=>'vstdate',
+            ],        
+            [
+                'label'=>'VN',
+                'attribute'=>'vn'
+            ],
+            [
+                'label'=>'HN',
+                'attribute'=>'hn'
+            ],
+            [
+                'label'=>'CID',
+                'attribute'=>'cid',
+            ],        
+            [
+                'label'=>'ชื่อ-สกุล',
+                'attribute'=>'ptname'
+            ],
+            [
+                'label'=>'อายุ',
+                'attribute'=>'age'
+            ],
+            [
+                'label'=>'ICD10',
+                'attribute'=>'icd10'
+            ],
+            [
+                'label'=>'ICD9CM',
+                'attribute'=>'icd9cm'
+            ],
+            [
+                'label'=>'ICD10TM',
+                'attribute'=>'icd10tm'
+            ],   
+            [
+                'label'=>'เจ้าหน้าที่',
+                'attribute'=>'doctor'
+            ],
         ]
     ]);
 ?>

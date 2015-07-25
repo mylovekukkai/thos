@@ -5,7 +5,7 @@ use yii\helpers\Html;
 use miloschuman\highcharts\Highcharts;
 
 $this->title = 'รายชื่อผู้มารับบริการทางกายภาพบำบัด OPD';
-$this->params['breadcrumbs'][] = ['label' => 'รายงานกายภาพบำบัด', 'url' => ['report/index']];
+$this->params['breadcrumbs'][] = ['label' => 'รายงานกายภาพบำบัด', 'url' => ['physical/index']];
 $this->params['breadcrumbs'][]=$this->title;
 ?>
 

@@ -3,7 +3,7 @@
 namespace frontend\controllers;
 use yii;
 
-class ReportController extends \yii\web\Controller
+class PhysicalController extends \yii\web\Controller
 {
     public $enableCsrfValidation = false;
     public function actionIndex()
